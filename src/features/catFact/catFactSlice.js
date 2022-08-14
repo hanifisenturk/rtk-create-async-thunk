@@ -27,7 +27,7 @@ const catFactSlice = createSlice({
         state.status = "loading";
       })
       .addCase(fetchCatFacts.fulfilled, (state, action) => {
-        state.status = "succeded";
+        state.status = "succeeded";
         state.fact = action.payload;
       })
       .addCase(fetchCatFacts.rejected, (state, action) => {
